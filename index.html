@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 	<style>
-		.content_wrapper {
-			margin: 15px auto;
-			padding: 15px;
-			background: #fff;
-			font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-		}
+	       .content_wrapper {
+	           margin: 15px auto;
+	           padding: 15px;
+	           background: #fff;
+	           font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	       }
 
-		#globalWrapper {
-			padding-bottom: 0;
-		}
+	       #globalWrapper {
+	           padding-bottom: 0;
+	       }
 
-		h1 {
-			margin: 0;
-			font-size: 70px;
-		}
+	       h1 {
+	           margin: 0;
+	           font-size: 70px;
+	       }
 
-		.mobile-open .content_wrapper {
-			display: none;
-		}
+	       .mobile-open .content_wrapper {
+	           display: none;
+	       }
 
-		@media (min-width: 576px) {
-			.content_wrapper {
-				width: 540px;
-			}
-		}
+	       @media (min-width: 576px) {
+	           .content_wrapper {
+	               width: 540px;
+	           }
+	       }
 
-		@media (min-width: 768px) {
-			.content_wrapper {
-				width: 720px;
-			}
-		}
+	       @media (min-width: 768px) {
+	           .content_wrapper {
+	               width: 720px;
+	           }
+	       }
 
-		@media (min-width: 992px) {
-			.content_wrapper {
-				width: 960px;
-			}
-		}
+	       @media (min-width: 992px) {
+	           .content_wrapper {
+	               width: 960px;
+	           }
+	       }
 
-		@media (min-width: 1200px) {
-			.content_wrapper {
-				width: 1140px;
-			}
-		}
-		/* Page content */
-		.content_wrapper p {
-			font-size: 16px;
-			font-weight: 300;
-		}
+	       @media (min-width: 1200px) {
+	           .content_wrapper {
+	               width: 1140px;
+	           }
+	       }
+	       /* Page content */
+	       .content_wrapper p {
+	           font-size: 16px;
+	           font-weight: 300;
+	       }
 	</style>
 	<style>
-	    #targetRNAinput,
-	    #rbsInput {
-	        text-transform: uppercase
-	    }
-	    #nupackform {
-	        display: none
-	    }
-	    .toeholdSwitchPart {
-	        font-weight: bold;
-	        margin-right: 5px;
-	        float: left
-	    }
-	    #triggerBindingSite {
-	        color: #003d33
-	    }
-	    #antiStartCodon {
-	        color: #00695c
-	    }
-	    #leftStem {
-	        color: #fbc02d
-	    }
-	    #stemLoopConstant {
-	        color: #bf5800
-	    }
-	    #ribosomeBindingSite {
-	        color: #f00
-	    }
-	    #rightStem {
-	        color: #fbc02d
-	    }
-	    #startCodon {
-	        color: #00695c
-	    }
-	    #antiAntiTriggerRNA {
-	        color: #003d33
-	    }
-	    #linkerSequence {
-	        color: #5d098f
-	    }
-	    #gene {
-	        color: #1a098f
-	    }
-	    label {
-	        border: 3px solid #cfd8dc;
-	        margin: 4px 0;
-	        padding: 4px;
-	        border-radius: 10px
-	    }
-	    label+label,
-	    label+input {
-	        margin-left: 5px
-	    }
-	    label span {
-	        margin: 5px;
-	        display: inline-block
-	    }
-	    input {
-	        border-radius: 6px;
-	        background: #eceff1;
-	        outline: 0;
-	        cursor: pointer;
-	        border: 2px solid #eceff1;
-	        transition: border-color .15s ease-in-out;
-	        padding: 4px
-	    }
-	    input:active,
-	    input:focus {
-	        border-color: #52c7b8
-	    }
+	       #targetRNAinput,
+	       #rbsInput {
+	           text-transform: uppercase
+	       }
+	       #nupackform {
+	           display: none
+	       }
+	       .toeholdSwitchPart {
+	           font-weight: bold;
+	           margin-right: 5px;
+	           float: left
+	       }
+	       #triggerBindingSite {
+	           color: #003d33
+	       }
+	       #antiStartCodon {
+	           color: #00695c
+	       }
+	       #leftStem {
+	           color: #fbc02d
+	       }
+	       #stemLoopConstant {
+	           color: #bf5800
+	       }
+	       #ribosomeBindingSite {
+	           color: #f00
+	       }
+	       #rightStem {
+	           color: #fbc02d
+	       }
+	       #startCodon {
+	           color: #00695c
+	       }
+	       #antiAntiTriggerRNA {
+	           color: #003d33
+	       }
+	       #linkerSequence {
+	           color: #5d098f
+	       }
+	       #gene {
+	           color: #1a098f
+	       }
+	       label {
+	           border: 3px solid #cfd8dc;
+	           margin: 4px 0;
+	           padding: 4px;
+	           border-radius: 10px
+	       }
+	       label+label,
+	       label+input {
+	           margin-left: 5px
+	       }
+	       label span {
+	           margin: 5px;
+	           display: inline-block
+	       }
+	       input {
+	           border-radius: 6px;
+	           background: #eceff1;
+	           outline: 0;
+	           cursor: pointer;
+	           border: 2px solid #eceff1;
+	           transition: border-color .15s ease-in-out;
+	           padding: 4px
+	       }
+	       input:active,
+	       input:focus {
+	           border-color: #52c7b8
+	       }
 	</style>
+	<title></title>
 </head>
 <body>
 	<div class="content_wrapper">
@@ -132,117 +133,98 @@
 		<p>The tools automatically check for illegal sites and stop codons, and can simultaneously show the complementary and reverse strands.</p>
 		<p>This was used by our team as part of the design of our switches and could be used by future iGEM teams working in a similar area to speed up their design.</p>
 		<p>For more information you might want to check out the related page on <a href="http://2017.igem.org/Team:CLSB-UK/Software/ToeholdSwitchTools">CLSB-UK's wiki</a>.</p>
-	<form oninput="createOutput();" onchange="createOutput()">
-	    <label style="display:flex" for="targetRNAinput"><span>Target RNA: </span>
-	        <input style="flex:1" type="text" id="targetRNAinput" oninput="this.value = cleanRNA(this.value);" value="AGCAGCACAUCAUGGUUUACA" /> </label>
-	    <div style="display:flex">
-	        <label style="display:flex;flex:1" for="rbsInput"><span>RBS: </span>
-	            <input style="flex:1" type="text" id="rbsInput" oninput="this.value = cleanRNA(this.value);" value="AGAGGAGA" /> </label>
-	        <label style="display:flex;flex:1" for="linkerInput"><span>Linker sequence: </span>
-	            <input style="flex:1" type="text" id="linkerInput" oninput="this.value = cleanRNA(this.value);" value="AACCUGGCGGCAGCGCAAAAG" /> </label>
-	        <label for="leaderSequenceCheckbox"><span>Leader sequence: </span>
-	            <input style="vertical-align:middle" type="checkbox" id="leaderSequenceCheckbox" /> </label>
-	        <input style="height:42px;margin-top:5px;padding:4px 10px" type="reset"> </div>
-	</form>
-	<div id="outputArea"></div>
-	<form id="nupackform" action="http://www.nupack.org/partition/new" id="partition_job" method="post">
-	    <input checked="checked" id="partition_job_nucleic_acid_type_rna" name="partition_job[nucleic_acid_type]" type="radio" value="RNA">
-	    <input id="partition_job_nucleic_acid_type_dna" name="partition_job[nucleic_acid_type]" type="radio" value="DNA">
-	    <input class="short_numeric" id="partition_job_temperature" name="partition_job[temperature]" size="3" type="text" value="37.0">
-	    <input class="short_numeric" id="partition_job_min_melt_temperature" name="partition_job[min_melt_temperature]" size="3" type="text">
-	    <input id="partition_job_is_melt" name="partition_job[is_melt]" type="checkbox" value="1">
-	    <input name="partition_job[is_melt]" type="hidden" value="0">
-	    <input class="short_numeric" id="partition_job_melt_temperature_increment" name="partition_job[melt_temperature_increment]" size="3" type="text">
-	    <input class="short_numeric" id="partition_job_max_melt_temperature" name="partition_job[max_melt_temperature]" size="3" type="text">
-	    <select class="num_sequence_selector" id="partition_job_num_sequences" name="partition_job[num_sequences]">
-	        <option value="1">1</option>
-	    </select>
-	    <select id="partition_job_max_complex_size" name="partition_job[max_complex_size]">
-	        <option value="1">1</option>
-	    </select>
-	    <input class="short_text" id="partition_sequence_0_name" name="partition_sequence[0][name]" size="30" type="text" value="strand1">
-	    <textarea class="sequence_editor" cols="60" id="partition_sequence_0_contents" name="partition_sequence[0][contents]" rows="5"></textarea>
-	    <input class="short_numeric" id="partition_sequence_0_concentration" name="partition_sequence[0][concentration]" size="3" type="text">
-	    <select id="partition_sequence_0_scale" name="partition_sequence[0][scale]">
-	        <option value="-6" selected="selected">μM</option>
-	    </select>
-	    <select id="partition_job_rna_parameter_file" name="partition_job[rna_parameter_file]">
-	        <option value="rna1995">Serra and Turner, 1995</option>
-	    </select>
-	    <select id="partition_job_dna_parameter_file" name="partition_job[dna_parameter_file]">
-	        <option value="dna1998">SantaLucia, 1998</option>
-	    </select>
-	    <select id="partition_job_dangle_level" name="partition_job[dangle_level]">
-	        <option value="1" selected="selected">Some</option>
-	    </select>
-	    <input id="partition_job_pseudoknots" name="partition_job[pseudoknots]" type="checkbox" value="1">
-	    <input name="partition_job[pseudoknots]" type="hidden" value="0">
-	    <input class="short_numeric" id="partition_job_na_salt" name="partition_job[na_salt]" size="3" type="text" value="1.0">
-	    <input class="short_numeric" id="partition_job_mg_salt" name="partition_job[mg_salt]" size="3" type="text" value="0.0">
-	    <input checked="checked" id="partition_job_dotplot_target" name="partition_job[dotplot_target]" type="checkbox" value="1">
-	    <input name="partition_job[dotplot_target]" type="hidden" value="0">
-	    <textarea class="sequence_editor" cols="60" id="partition_job_predefined_complexes" name="partition_job[predefined_complexes]" rows="10"></textarea>
-	    <input class="short_numeric" id="partition_job_filter_min_fraction_of_max" name="partition_job[filter_min_fraction_of_max]" size="3" type="text">
-	    <input class="short_numeric" id="partition_job_filter_max_number" name="partition_job[filter_max_number]" size="3" type="text">
-	    <input class="very_long_text" id="partition_job_email_address" name="partition_job[email_address]" size="30" type="text">
-	    <input name="commit" type="submit" value="Analyze">
-	</form>
-	<script type="text/javascript">
-	    var complementary_bases = {
-	            A: "U",
-	            C: "G",
-	            G: "C",
-	            U: "A"
-	        },
-	        stop_codons = ["UAG", "UAA", "UGA"],
-	        cut_sites = ["GAAUUC", "UCUAGA", "ACUAGU", "CUGCAG", "GCGGCCGC"];
+		<form onchange="createOutput()" oninput="createOutput();">
+			<label for="targetRNAinput" style="display:flex"><span>Target RNA:</span> <input id="targetRNAinput" oninput="this.value = cleanRNA(this.value);" style="flex:1" type="text" value="AGCAGCACAUCAUGGUUUACA"></label>
+			<div style="display:flex">
+				<label for="rbsInput" style="display:flex;flex:1"><span>RBS:</span> <input id="rbsInput" oninput="this.value = cleanRNA(this.value);" style="flex:1" type="text" value="AGAGGAGA"></label> <label for="linkerInput" style="display:flex;flex:1"><span>Linker sequence:</span> <input id="linkerInput" oninput="this.value = cleanRNA(this.value);" style="flex:1" type="text" value="AACCUGGCGGCAGCGCAAAAG"></label> <label for="leaderSequenceCheckbox"><span>Leader sequence:</span> <input id="leaderSequenceCheckbox" style="vertical-align:middle" type="checkbox"></label> <input style="height:42px;margin-top:5px;padding:4px 10px" type="reset">
+			</div>
+		</form>
+		<div id="outputArea"></div>
+		<form action="http://www.nupack.org/partition/new" id="partition_job" method="post" name="partition_job">
+			<input checked="checked" id="partition_job_nucleic_acid_type_rna" name="partition_job[nucleic_acid_type]" type="radio" value="RNA"> <input id="partition_job_nucleic_acid_type_dna" name="partition_job[nucleic_acid_type]" type="radio" value="DNA"> <input class="short_numeric" id="partition_job_temperature" name="partition_job[temperature]" size="3" type="text" value="37.0"> <input class="short_numeric" id="partition_job_min_melt_temperature" name="partition_job[min_melt_temperature]" size="3" type="text"> <input id="partition_job_is_melt" name="partition_job[is_melt]" type="checkbox" value="1"> <input name="partition_job[is_melt]" type="hidden" value="0"> <input class="short_numeric" id="partition_job_melt_temperature_increment" name="partition_job[melt_temperature_increment]" size="3" type="text"> <input class="short_numeric" id="partition_job_max_melt_temperature" name="partition_job[max_melt_temperature]" size="3" type="text"> <select class="num_sequence_selector" id="partition_job_num_sequences" name="partition_job[num_sequences]">
+				<option value="1">
+					1
+				</option>
+			</select> <select id="partition_job_max_complex_size" name="partition_job[max_complex_size]">
+				<option value="1">
+					1
+				</option>
+			</select> <input class="short_text" id="partition_sequence_0_name" name="partition_sequence[0][name]" size="30" type="text" value="strand1"> 
+			<textarea class="sequence_editor" cols="60" id="partition_sequence_0_contents" name="partition_sequence[0][contents]" rows="5"></textarea> <input class="short_numeric" id="partition_sequence_0_concentration" name="partition_sequence[0][concentration]" size="3" type="text"> <select id="partition_sequence_0_scale" name="partition_sequence[0][scale]">
+				<option selected="selected" value="-6">
+					μM
+				</option>
+			</select> <select id="partition_job_rna_parameter_file" name="partition_job[rna_parameter_file]">
+				<option value="rna1995">
+					Serra and Turner, 1995
+				</option>
+			</select> <select id="partition_job_dna_parameter_file" name="partition_job[dna_parameter_file]">
+				<option value="dna1998">
+					SantaLucia, 1998
+				</option>
+			</select> <select id="partition_job_dangle_level" name="partition_job[dangle_level]">
+				<option selected="selected" value="1">
+					Some
+				</option>
+			</select> <input id="partition_job_pseudoknots" name="partition_job[pseudoknots]" type="checkbox" value="1"> <input name="partition_job[pseudoknots]" type="hidden" value="0"> <input class="short_numeric" id="partition_job_na_salt" name="partition_job[na_salt]" size="3" type="text" value="1.0"> <input class="short_numeric" id="partition_job_mg_salt" name="partition_job[mg_salt]" size="3" type="text" value="0.0"> <input checked="checked" id="partition_job_dotplot_target" name="partition_job[dotplot_target]" type="checkbox" value="1"> <input name="partition_job[dotplot_target]" type="hidden" value="0"> 
+			<textarea class="sequence_editor" cols="60" id="partition_job_predefined_complexes" name="partition_job[predefined_complexes]" rows="10"></textarea> <input class="short_numeric" id="partition_job_filter_min_fraction_of_max" name="partition_job[filter_min_fraction_of_max]" size="3" type="text"> <input class="short_numeric" id="partition_job_filter_max_number" name="partition_job[filter_max_number]" size="3" type="text"> <input class="very_long_text" id="partition_job_email_address" name="partition_job[email_address]" size="30" type="text"> <input name="commit" type="submit" value="Analyze">
+		</form>
+		<script type="text/javascript">
+		      var complementary_bases = {
+		              A: "U",
+		              C: "G",
+		              G: "C",
+		              U: "A"
+		          },
+		          stop_codons = ["UAG", "UAA", "UGA"],
+		          cut_sites = ["GAAUUC", "UCUAGA", "ACUAGU", "CUGCAG", "GCGGCCGC"];
 
-	    function createOutput() {
-	        var a = createToeholdSwitch(),
-	            c = "<p><b>Complementary strand:</b> " + comp_strand(cleanRNAid("targetRNAinput")) + "<br><b>Reverse strand:</b> " + reverse(cleanRNAid("targetRNAinput")) + "<br><b>Reverse complementary strand:</b> " + comp_strand(reverse(cleanRNAid("targetRNAinput"))) + "<br><br><b>Possible toehold switch:</b><br> " + a[1] + (0 < a[2].length ? "<br><strong>Warning:</strong> Contains invalid sequence(s): " + a[2].join(", ") : "") + "</p><br><input type=\"submit\" style=\"display:block; clear: both; margin-top: 2px; padding: 10px;\" value=\"Send to NUPACK\" onclick=\"document.getElementById('nupackform').submit()\" />";
-	        document.getElementById("partition_sequence_0_contents").value = a[0], document.getElementById("outputArea").innerHTML = c
-	    }
+		      function createOutput() {
+		          var a = createToeholdSwitch(),
+		              c = "<p><b>Complementary strand:<\/b> " + comp_strand(cleanRNAid("targetRNAinput")) + "<br><b>Reverse strand:<\/b> " + reverse(cleanRNAid("targetRNAinput")) + "<br><b>Reverse complementary strand:<\/b> " + comp_strand(reverse(cleanRNAid("targetRNAinput"))) + "<br><br><b>Possible toehold switch:<\/b><br> " + a[1] + (0 < a[2].length ? "<br><strong>Warning:<\/strong> Contains invalid sequence(s): " + a[2].join(", ") : "") + "<\/p><br><input type=\"submit\" style=\"display:block; clear: both; margin-top: 2px; padding: 10px;\" value=\"Send to NUPACK\" onclick=\"document.getElementById('nupackform').submit()\" />";
+		          document.getElementById("partition_sequence_0_contents").value = a[0], document.getElementById("outputArea").innerHTML = c
+		      }
 
-	    function cleanRNAid(id) {
-	        return cleanRNA(document.getElementById(id).value);
-	    }
+		      function cleanRNAid(id) {
+		          return cleanRNA(document.getElementById(id).value);
+		      }
 
-	    function cleanRNA(rna) {
-	        return rna.toUpperCase().replace(/[^ACGU]/g, "");
-	    }
+		      function cleanRNA(rna) {
+		          return rna.toUpperCase().replace(/[^ACGU]/g, "");
+		      }
 
-	    function reverse(rna) {
-	        return rna.split("").reverse().join("")
-	    }
+		      function reverse(rna) {
+		          return rna.split("").reverse().join("")
+		      }
 
-	    function comp_strand(rna) {
-	        var rna = rna.split('');
-	        var s = '';
-	        for (i = 0; i < rna.length; i++) {
-	            s += complementary_bases[rna[i]];
-	        }
-	        return s;
-	    }
+		      function comp_strand(rna) {
+		          var rna = rna.split('');
+		          var s = '';
+		          for (i = 0; i < rna.length; i++) {
+		              s += complementary_bases[rna[i]];
+		          }
+		          return s;
+		      }
 
-	    function toeholdSwitchPart(id, rna) {
-	        return "<span class=\"toeholdSwitchPart\" id=\"" + id + "\">" + rna + "</span>";
-	    }
+		      function toeholdSwitchPart(id, rna) {
+		          return "<span class=\"toeholdSwitchPart\" id=\"" + id + "\">" + rna + "<\/span>";
+		      }
 
-	    function createToeholdSwitch() {
-	        var a = (document.getElementById("leaderSequenceCheckbox").checked ? toeholdSwitchPart("leaderSequence", "GGG") : "") + toeholdSwitchPart("triggerBindingSite", comp_strand(reverse(cleanRNAid("targetRNAinput")))) + toeholdSwitchPart("antiStartCodon", "GGA") + toeholdSwitchPart("leftStem", "UUUAC") + toeholdSwitchPart("stemLoopConstant", "AAAA") + toeholdSwitchPart("ribosomeBindingSite", cleanRNAid("rbsInput")) + toeholdSwitchPart("rightStem", "GUAAA") + toeholdSwitchPart("startCodon", "AUG") + toeholdSwitchPart("antiAntiTriggerRNA", cleanRNAid("targetRNAinput").substring(0, 9)) + toeholdSwitchPart("linkerSequence", cleanRNAid("linkerInput")),
-	            c = a.replace(/<.+?>/g, "").replace(/\.+$/, "");
-	        "AUAAAGUAUCAGAAACAGAGGAGAAUACUUAUG" + cleanRNAid("targetRNAinput").substring(0, 9) + "AACCUGGCGGCAGCGCAAAAG";
-	        return [c, a, illegalsIn(c)]
-	    }
-	    var illegalsIn = a => stopCodonsIn(a).concat(cutSitesIn(a));
+		      function createToeholdSwitch() {
+		          var a = (document.getElementById("leaderSequenceCheckbox").checked ? toeholdSwitchPart("leaderSequence", "GGG") : "") + toeholdSwitchPart("triggerBindingSite", comp_strand(reverse(cleanRNAid("targetRNAinput")))) + toeholdSwitchPart("antiStartCodon", "GGA") + toeholdSwitchPart("leftStem", "UUUAC") + toeholdSwitchPart("stemLoopConstant", "AAAA") + toeholdSwitchPart("ribosomeBindingSite", cleanRNAid("rbsInput")) + toeholdSwitchPart("rightStem", "GUAAA") + toeholdSwitchPart("startCodon", "AUG") + toeholdSwitchPart("antiAntiTriggerRNA", cleanRNAid("targetRNAinput").substring(0, 9)) + toeholdSwitchPart("linkerSequence", cleanRNAid("linkerInput")),
+		              c = a.replace(/<.+?>/g, "").replace(/\.+$/, "");
+		          "AUAAAGUAUCAGAAACAGAGGAGAAUACUUAUG" + cleanRNAid("targetRNAinput").substring(0, 9) + "AACCUGGCGGCAGCGCAAAAG";
+		          return [c, a, illegalsIn(c)]
+		      }
+		      var illegalsIn = a => stopCodonsIn(a).concat(cutSitesIn(a));
 
-	    function stopCodonsIn(a) {
-	        var c = a.match(/GUAAAAUG.*/)[0].substring(8, 17).match(/.{3}/g);
-	        return c.filter(d => -1 != stop_codons.indexOf(d))
-	    }
-	    var cutSitesIn = a => cut_sites.filter(c => -1 != a.indexOf(c));
-	    createOutput();
-	</script>
-</div>
+		      function stopCodonsIn(a) {
+		          var c = a.match(/GUAAAAUG.*/)[0].substring(8, 17).match(/.{3}/g);
+		          return c.filter(d => -1 != stop_codons.indexOf(d))
+		      }
+		      var cutSitesIn = a => cut_sites.filter(c => -1 != a.indexOf(c));
+		      createOutput();
+		</script>
+	</div>
 </body>
 </html>

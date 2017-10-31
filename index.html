@@ -138,6 +138,8 @@
 	    <div style="display:flex">
 	        <label style="display:flex;flex:1" for="rbsInput"><span>RBS: </span>
 	            <input style="flex:1" type="text" id="rbsInput" oninput="this.value = cleanRNA(this.value);" value="AGAGGAGA" /> </label>
+	        <label style="display:flex;flex:1" for="linkerInput"><span>Linker sequence: </span>
+	            <input style="flex:1" type="text" id="linkerInput" oninput="this.value = cleanRNA(this.value);" value="AACCUGGCGGCAGCGCAAAAG" /> </label>
 	        <label for="leaderSequenceCheckbox"><span>Leader sequence: </span>
 	            <input style="vertical-align:middle" type="checkbox" id="leaderSequenceCheckbox" /> </label>
 	        <input style="height:42px;margin-top:5px;padding:4px 10px" type="reset"> </div>
@@ -227,7 +229,7 @@
 	    }
 
 	    function createToeholdSwitch() {
-	        var a = (document.getElementById("leaderSequenceCheckbox").checked ? toeholdSwitchPart("leaderSequence", "GGG") : "") + toeholdSwitchPart("triggerBindingSite", comp_strand(reverse(cleanRNAid("targetRNAinput")))) + toeholdSwitchPart("antiStartCodon", "GGA") + toeholdSwitchPart("leftStem", "UUUAC") + toeholdSwitchPart("stemLoopConstant", "AAAA") + toeholdSwitchPart("ribosomeBindingSite", cleanRNAid("rbsInput")) + toeholdSwitchPart("rightStem", "GUAAA") + toeholdSwitchPart("startCodon", "AUG") + toeholdSwitchPart("antiAntiTriggerRNA", cleanRNAid("targetRNAinput").substring(0, 9)) + toeholdSwitchPart("linkerSequence", "AACCUGGCGGCAGCGCAAAAG"),
+	        var a = (document.getElementById("leaderSequenceCheckbox").checked ? toeholdSwitchPart("leaderSequence", "GGG") : "") + toeholdSwitchPart("triggerBindingSite", comp_strand(reverse(cleanRNAid("targetRNAinput")))) + toeholdSwitchPart("antiStartCodon", "GGA") + toeholdSwitchPart("leftStem", "UUUAC") + toeholdSwitchPart("stemLoopConstant", "AAAA") + toeholdSwitchPart("ribosomeBindingSite", cleanRNAid("rbsInput")) + toeholdSwitchPart("rightStem", "GUAAA") + toeholdSwitchPart("startCodon", "AUG") + toeholdSwitchPart("antiAntiTriggerRNA", cleanRNAid("targetRNAinput").substring(0, 9)) + toeholdSwitchPart("linkerSequence", cleanRNAid("linkerInput")),
 	            c = a.replace(/<.+?>/g, "").replace(/\.+$/, "");
 	        "AUAAAGUAUCAGAAACAGAGGAGAAUACUUAUG" + cleanRNAid("targetRNAinput").substring(0, 9) + "AACCUGGCGGCAGCGCAAAAG";
 	        return [c, a, illegalsIn(c)]
